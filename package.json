@@ -11,7 +11,7 @@
 		"start": "npm run develop",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",
-		"deploy": "yarn build && gh-pages -d public"
+		"deploy": "yarn build && node ./scripts/deploy-github"
 	},
 	"dependencies": {
 		"gatsby": "^2.21.37",
