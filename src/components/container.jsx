@@ -7,11 +7,17 @@ export default ({ children, color = null, vertical = false }) => {
 		<div
 			className={[
 				stylesContainer.container,
-				vertical && stylesContainer.vertical,
 				color && stylesPalette[`bg${color}`],
 			].join(" ")}
 		>
-			{children}
+			<div
+				className={[
+					stylesContainer.content,
+					vertical && stylesContainer.vertical,
+				].join(" ")}
+			>
+				{children}
+			</div>
 		</div>
 	);
 };
