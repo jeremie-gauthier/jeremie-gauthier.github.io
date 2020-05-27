@@ -1,8 +1,7 @@
 :root {
-	--primary: #1d3e53;
-	--secondary: #254b62;
-	--tertiary: #476d7c;
-	--light: #77abb7;
+	--primary: #ffb677;
+	--secondary: #ff8364;
+	--tertiary: #5f6caf;
 }
 
 .bg-primary {
@@ -17,10 +16,6 @@
 	background-color: var(--tertiary);
 }
 
-.bg-light {
-	background-color: var(--light);
-}
-
 .primary {
 	color: var(--primary);
 }
@@ -31,8 +26,4 @@
 
 .tertiary {
 	color: var(--tertiary);
-}
-
-.light {
-	color: var(--light);
 }

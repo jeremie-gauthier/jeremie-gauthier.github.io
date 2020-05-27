@@ -10,7 +10,7 @@ export default () => {
 	return (
 		<Layout>
 			<Header color={"Secondary"} />
-			<Container color={"Tertiary"} vertical>
+			<Container color={"Primary"} vertical>
 				<Main />
 				<Footer />
 			</Container>
