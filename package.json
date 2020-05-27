@@ -1,0 +1,28 @@
+{
+	"homepage": "http://jeremie-gauthier.github.io.git",
+	"name": "portfolio",
+	"private": true,
+	"description": "My portfolio",
+	"version": "0.1.0",
+	"license": "UNLICENSED",
+	"scripts": {
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"start": "npm run develop",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean",
+		"deploy": "yarn build && gh-pages -d public"
+	},
+	"dependencies": {
+		"gatsby": "^2.21.37",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0"
+	},
+	"devDependencies": {
+		"gh-pages": "^2.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:jeremie-gauthier/jeremie-gauthier.github.io.git"
+	}
+}
