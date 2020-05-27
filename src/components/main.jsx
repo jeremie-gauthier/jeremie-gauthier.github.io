@@ -1,11 +1,15 @@
 import React from "react";
 import stylesMain from "./main.module.css";
-import Text from "./text";
+import { Container } from "./layouts";
+import { Text, Title } from "./fonts";
 
 export default () => {
 	return (
-		<div className={stylesMain.container}>
-			<Text markup={"h2"}>Jeremie GAUTHIER</Text>
-		</div>
+		<Container vertical style={stylesMain.container}>
+			<Title>A propos</Title>
+			<Text markup={"div"} style={stylesMain.name}>
+				Jeremie GAUTHIER
+			</Text>
+		</Container>
 	);
 };

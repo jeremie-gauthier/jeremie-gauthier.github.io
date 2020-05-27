@@ -1,6 +1,6 @@
 import React from "react";
 import stylesFooter from "./footer.module.css";
-import Text from "./text";
+import Text from "../fonts/text";
 
 export default () => {
 	return (

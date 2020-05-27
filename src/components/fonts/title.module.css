@@ -1,0 +1,6 @@
+@import "../palette.module.css";
+
+.title {
+	text-decoration: underline var(--secondary);
+	color: var(--tertiary);
+}

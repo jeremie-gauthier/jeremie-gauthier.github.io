@@ -1,4 +1,4 @@
-@import "palette.module.css";
+@import "../palette.module.css";
 
 .text {
 	color: var(--tertiary);
