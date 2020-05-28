@@ -1,13 +1,4 @@
 .container {
-	flex: auto;
-	min-width: 35vh;
-	max-width: 35vh;
-	height: 100%;
-}
-
-@media (max-width: 500px) {
-	.container {
-		max-width: 100%;
-		max-height: 10vh;
-	}
+	position: fixed;
+	width: 100%;
 }

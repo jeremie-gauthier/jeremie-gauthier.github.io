@@ -1,11 +1,5 @@
 .inline {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	height: 100%;
-}
-
-@media (max-width: 500px) {
-	.inline {
-		flex-direction: column;
-	}
 }
