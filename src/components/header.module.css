@@ -1,0 +1,19 @@
+.subtitle {
+	font-weight: bold;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+}
+
+.links * {
+	font-size: 1.5rem;
+	padding: 0.5rem 0rem;
+	color: #fff;
+}
+
+.links *:hover {
+	color: #fff;
+	text-decoration: underline #f9d310;
+}

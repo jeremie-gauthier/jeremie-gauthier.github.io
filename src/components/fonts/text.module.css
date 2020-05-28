@@ -1,5 +1,0 @@
-@import "../palette.module.css";
-
-.text {
-	color: var(--tertiary);
-}

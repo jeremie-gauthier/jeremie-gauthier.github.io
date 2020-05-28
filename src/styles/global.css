@@ -1,10 +1,22 @@
-/* html,
+:root {
+	--primary: #071e70;
+	--secondary: #090770;
+	--tertiary: #f9d310;
+}
+
+html,
 body,
 #___gatsby,
 #gatsby-focus-wrapper {
 	height: 100%;
-} */
+}
 
 body {
 	margin: 0px;
+	color: #fff;
+}
+
+.container-fluid,
+.row {
+	height: 100%;
 }
