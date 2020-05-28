@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default () => {
 	return (
@@ -14,6 +15,7 @@ export default () => {
 				<Col style={{ backgroundColor: "#090770" }}>
 					<h1>Body</h1>
 					<p>Lorem ipsum dolor sit amet</p>
+					<Footer />
 				</Col>
 			</Row>
 		</Container>
