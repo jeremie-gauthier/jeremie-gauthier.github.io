@@ -20,7 +20,6 @@ const Portrait = () => {
 			`}
 			render={(data) => (
 				<Img
-					// className="false"
 					title="Jeremie GAUTHIER"
 					alt="Portrait"
 					fluid={data.file.childImageSharp.fluid}
