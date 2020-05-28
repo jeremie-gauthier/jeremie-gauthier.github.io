@@ -13,7 +13,7 @@ export default () => {
 		<Container fluid>
 			{/* Show on xs only */}
 			<Row className="d-block d-sm-none bg-header">
-				<HeaderMobile />
+				<HeaderMobile activeLink={activeLink} setActiveLink={setActiveLink} />
 			</Row>
 
 			<Row className="full-height">

@@ -12,3 +12,22 @@
 	font-weight: bold;
 	color: #f9d310;
 }
+
+.dropdown {
+	background-color: #0d1e5b;
+	border-color: #f9d310;
+}
+
+.dropdown-menu {
+	background-color: #0d1e5b;
+}
+
+.dropdown-menu * {
+	color: #fff;
+}
+
+.active,
+.active:focus,
+.active:enabled {
+	color: #f9d310;
+}

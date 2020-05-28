@@ -39,6 +39,7 @@
 }
 
 .active,
-.active:focus {
+.active:focus,
+.active:enabled {
 	text-decoration: underline #f9d310;
 }
