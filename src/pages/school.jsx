@@ -17,11 +17,11 @@ export default () => {
 			<Row className="full-height">
 				{/* Show on sm+ only */}
 				<Col className="d-none d-sm-block bg-header pad-top" md={3} sm={5}>
-					<HeaderDesktop activeLink={1} />
+					<HeaderDesktop activeLink={2} />
 				</Col>
 
 				<Col style={{ backgroundColor: "#090770" }}>
-					<h1>About</h1>
+					<h1>School</h1>
 					<Footer />
 				</Col>
 			</Row>

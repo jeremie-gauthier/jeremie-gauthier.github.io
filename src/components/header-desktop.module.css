@@ -29,11 +29,15 @@
 	font-size: 1.5rem;
 	padding: 0.5rem 0rem;
 	color: #fff;
-	text-decoration: none;
+	/* text-decoration: none; */
 	max-width: fit-content;
 }
 
 .links *:hover {
 	color: #fff;
+	text-decoration: underline #f9d310;
+}
+
+.active {
 	text-decoration: underline #f9d310;
 }
