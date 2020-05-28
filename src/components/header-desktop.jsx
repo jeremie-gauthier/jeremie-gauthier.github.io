@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import stylesHeader from "./header-desktop.module.css";
-import { Link } from "gatsby";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import { Button } from "react-bootstrap";
 
 const Portrait = () => {
 	return (
@@ -29,7 +29,27 @@ const Portrait = () => {
 	);
 };
 
-const Header = ({ activeLink }) => {
+const Links = ({ activeLink, setActiveLink }) => {
+	const links = [
+		"Qui suis-je ?",
+		"Ma formation",
+		"Mes expériences",
+		"Me contacter",
+	];
+
+	return links.map((text, index) => (
+		<Button
+			key={index}
+			variant="link"
+			className={activeLink === index ? stylesHeader.active : null}
+			onClick={() => setActiveLink(index)}
+		>
+			{text}
+		</Button>
+	));
+};
+
+const Header = ({ activeLink, setActiveLink }) => {
 	return (
 		<Fragment>
 			<div className={stylesHeader.profile}>
@@ -42,27 +62,7 @@ const Header = ({ activeLink }) => {
 				</div>
 			</div>
 			<div className={stylesHeader.links}>
-				<Link to="/" className={activeLink === 1 ? stylesHeader.active : null}>
-					Qui suis-je ?
-				</Link>
-				<Link
-					to="school"
-					className={activeLink === 2 ? stylesHeader.active : null}
-				>
-					Ma formation
-				</Link>
-				<Link
-					to="work"
-					className={activeLink === 3 ? stylesHeader.active : null}
-				>
-					Mes exp&eacute;riences
-				</Link>
-				<Link
-					to="contact"
-					className={activeLink === 4 ? stylesHeader.active : null}
-				>
-					Me contacter
-				</Link>
+				<Links activeLink={activeLink} setActiveLink={setActiveLink} />
 			</div>
 		</Fragment>
 	);
