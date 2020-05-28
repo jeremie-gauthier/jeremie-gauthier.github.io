@@ -17,7 +17,7 @@ export default () => {
 				</div>
 			</div>
 			<div className={stylesHeader.links}>
-				<Link to="about">Qui suis-je ?</Link>
+				<Link to="/">Qui suis-je ?</Link>
 				<Link to="school">Ma formation</Link>
 				<Link to="work">Mes exp&eacute;riences</Link>
 				<Link to="contact">Me contacter</Link>

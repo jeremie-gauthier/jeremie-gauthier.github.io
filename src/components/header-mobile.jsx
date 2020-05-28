@@ -15,7 +15,7 @@ export default () => {
 
 				<Dropdown.Menu>
 					<Dropdown.Item>
-						<Link to="about">Qui suis-je ?</Link>
+						<Link to="/">Qui suis-je ?</Link>
 					</Dropdown.Item>
 					<Dropdown.Item>
 						<Link to="school">Ma formation</Link>
