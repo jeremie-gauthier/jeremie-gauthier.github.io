@@ -1,5 +1,5 @@
 :root {
-	--primary: #071e70;
+	--primary: #0d1e5b;
 	--secondary: #090770;
 	--tertiary: #f9d310;
 }
@@ -9,6 +9,7 @@ body,
 #___gatsby,
 #gatsby-focus-wrapper {
 	height: 100%;
+	overflow: hidden;
 }
 
 body {
@@ -17,6 +18,14 @@ body {
 }
 
 .container-fluid,
-.row {
+.full-height {
 	height: 100%;
+}
+
+.bg-header {
+	background-color: var(--primary);
+}
+
+.pad-top {
+	padding-top: 1rem;
 }
