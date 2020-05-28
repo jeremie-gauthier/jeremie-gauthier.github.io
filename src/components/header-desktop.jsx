@@ -12,7 +12,7 @@ const Portrait = () => {
 					file(relativePath: { eq: "jergauth.png" }) {
 						childImageSharp {
 							fluid(maxWidth: 200, maxHeight: 200) {
-								...GatsbyImageSharpFluid
+								...GatsbyImageSharpFluid_noBase64
 							}
 						}
 					}
@@ -23,8 +23,6 @@ const Portrait = () => {
 					title="Jeremie GAUTHIER"
 					alt="Portrait"
 					fluid={data.file.childImageSharp.fluid}
-					width={200}
-					height={200}
 				/>
 			)}
 		/>
