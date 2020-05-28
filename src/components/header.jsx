@@ -18,7 +18,6 @@ export default () => {
 				<Link to="work">Mes exp&eacute;riences</Link>
 				<Link to="contact">Me contacter</Link>
 			</div>
-			<h1>Footer</h1>
 		</Fragment>
 	);
 };
