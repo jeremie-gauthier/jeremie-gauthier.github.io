@@ -1,0 +1,50 @@
+/* QUOTE */
+.quote {
+	opacity: 0.5;
+	display: flex;
+	font-style: italic;
+	font-weight: bold;
+	align-items: flex-end;
+}
+
+.quote-symbol {
+	font-size: 4rem;
+}
+
+.quote-text {
+	font-size: 1.2rem;
+}
+
+.first-line {
+	margin: 0;
+	padding-left: 0.5rem;
+}
+
+.second-line {
+	margin: 0;
+	padding-left: 2rem;
+}
+
+/* SERVICES */
+.services {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.services div {
+	flex: 1;
+	text-align: center;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.icons img {
+	height: 30px;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
