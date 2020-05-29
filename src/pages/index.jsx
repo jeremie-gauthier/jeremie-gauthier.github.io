@@ -36,7 +36,7 @@ export default () => {
 					/>
 				</Col>
 
-				<Col style={{ backgroundColor: "#090770" }}>
+				<Col className="main">
 					{activeLink === 0 && <About />}
 					{activeLink === 1 && <h1>Ma formation</h1>}
 					{activeLink === 2 && <h1>Mes exp&eacute;riences</h1>}

@@ -26,6 +26,17 @@ body {
 	background-color: var(--primary);
 }
 
+.main {
+	background-color: var(--secondary);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .pad-top {
 	padding-top: 1rem;
+}
+
+footer {
+	align-self: center;
 }
