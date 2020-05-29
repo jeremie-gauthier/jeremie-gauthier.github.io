@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Dropdown, Container, Image, Button } from "react-bootstrap";
+import { Dropdown, Image, Button } from "react-bootstrap";
 import stylesHeader from "./header-mobile.module.css";
 import menu from "../assets/menu-burger.svg";
 
@@ -26,7 +26,7 @@ export default ({ activeLink, setActiveLink }) => {
 	const [show, setShow] = useState(false);
 
 	return (
-		<Container className={stylesHeader.container}>
+		<header className={stylesHeader.container}>
 			<h1 className={stylesHeader.title}>J&eacute;r&eacute;mie GAUTHIER</h1>
 			<Dropdown show={show} onToggle={(showState) => setShow(showState)}>
 				<Dropdown.Toggle className={stylesHeader.dropdown}>
@@ -40,6 +40,6 @@ export default ({ activeLink, setActiveLink }) => {
 					/>
 				</Dropdown.Menu>
 			</Dropdown>
-		</Container>
+		</header>
 	);
 };
