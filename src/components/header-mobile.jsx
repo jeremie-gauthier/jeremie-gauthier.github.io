@@ -30,7 +30,7 @@ export default ({ activeLink, setActiveLink }) => {
 			<h1 className={stylesHeader.title}>J&eacute;r&eacute;mie GAUTHIER</h1>
 			<Dropdown show={show} onToggle={(showState) => setShow(showState)}>
 				<Dropdown.Toggle className={stylesHeader.dropdown}>
-					<Image src={menu} />
+					<Image src={menu} alt="Menu d&eacute;roulant" />
 				</Dropdown.Toggle>
 				<Dropdown.Menu className={stylesHeader.dropdownMenu}>
 					<Links
