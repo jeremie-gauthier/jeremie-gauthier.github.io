@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import stylesHeader from "./header-desktop.module.css";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -46,7 +46,7 @@ const Links = ({ activeLink, setActiveLink }) => {
 
 const Header = ({ activeLink, setActiveLink }) => {
 	return (
-		<Fragment>
+		<header>
 			<div className={stylesHeader.profile}>
 				<h1 className={stylesHeader.title}>J&eacute;r&eacute;mie GAUTHIER</h1>
 				<div className={stylesHeader.portrait}>
@@ -59,7 +59,7 @@ const Header = ({ activeLink, setActiveLink }) => {
 			<div className={stylesHeader.links}>
 				<Links activeLink={activeLink} setActiveLink={setActiveLink} />
 			</div>
-		</Fragment>
+		</header>
 	);
 };
 

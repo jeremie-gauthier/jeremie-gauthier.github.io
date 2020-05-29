@@ -2,6 +2,8 @@ import React from "react";
 
 export default () => {
 	return (
-		<div>© {new Date().getFullYear()} - J&eacute;r&eacute;mie GAUTHIER</div>
+		<footer>
+			© {new Date().getFullYear()} - J&eacute;r&eacute;mie GAUTHIER
+		</footer>
 	);
 };
