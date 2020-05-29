@@ -26,21 +26,17 @@
 }
 
 /* SERVICES */
-.services {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+.title-services {
+	text-align: center;
+	font-weight: bold;
 }
 
 .services div {
-	flex: 1;
 	text-align: center;
 }
 
-.icons {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.services div p {
+	opacity: 0.75;
 }
 
 .icons img {
