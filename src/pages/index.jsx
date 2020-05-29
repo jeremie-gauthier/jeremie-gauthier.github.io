@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,9 +7,50 @@ import HeaderDesktop from "../components/header-desktop";
 import HeaderMobile from "../components/header-mobile";
 import Footer from "../components/footer";
 import About from "../components/about";
+import axios from "axios";
 
 export default () => {
 	const [activeLink, setActiveLink] = useState(0);
+
+	const [config, setConfig] = useState(null);
+	useEffect(() => {
+		const getKey = async () => {
+			const data = {
+				grant_type: "client_credentials",
+				client_id: process.env.UID,
+				client_secret: process.env.SECRET,
+			};
+
+			const result = await axios.post(
+				`${process.env.API_URL}/oauth/token`,
+				data
+			);
+
+			setConfig({
+				headers: { Authorization: `Bearer ${result.data.access_token}` },
+			});
+		};
+
+		getKey();
+	}, []);
+
+	const [cursus, setCursus] = useState(null);
+	useEffect(() => {
+		const getUser = async () => {
+			const result = await axios.get(
+				`${process.env.API_URL}/v2/users/${process.env.ID42}`,
+				config
+			);
+			const cursus_user = result.data.cursus_users[0];
+			setCursus({
+				grade: cursus_user.grade,
+				level: cursus_user.level,
+				skills: cursus_user.skills,
+			});
+		};
+
+		if (config) getUser();
+	}, [config]);
 
 	return (
 		<Container fluid>
