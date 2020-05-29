@@ -1,0 +1,9 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 720px;
+}
+
+.title {
+	padding: 0.5rem 0rem;
+}
