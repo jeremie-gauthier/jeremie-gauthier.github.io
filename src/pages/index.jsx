@@ -6,6 +6,7 @@ import "../styles/global.css";
 import HeaderDesktop from "../components/header-desktop";
 import HeaderMobile from "../components/header-mobile";
 import Footer from "../components/footer";
+import About from "../components/about";
 
 export default () => {
 	const [activeLink, setActiveLink] = useState(0);
@@ -13,10 +14,7 @@ export default () => {
 	return (
 		<Container fluid>
 			<Helmet>
-				<link
-					rel="icon"
-					href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>"
-				/>
+				<link rel="icon" href="/assets/favicon.svg" />
 				<meta
 					name="description"
 					content="Jeremie GAUTHIER's portfolio. FullStack Developer Freelance. Currently studying at 42 Paris."
@@ -39,7 +37,7 @@ export default () => {
 				</Col>
 
 				<Col style={{ backgroundColor: "#090770" }}>
-					{activeLink === 0 && <h1>Qui suis-je ?</h1>}
+					{activeLink === 0 && <About />}
 					{activeLink === 1 && <h1>Ma formation</h1>}
 					{activeLink === 2 && <h1>Mes exp&eacute;riences</h1>}
 					{activeLink === 3 && <h1>Me contacter</h1>}
