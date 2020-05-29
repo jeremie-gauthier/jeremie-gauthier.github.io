@@ -30,12 +30,7 @@ const Portrait = () => {
 };
 
 const Links = ({ activeLink, setActiveLink }) => {
-	const links = [
-		"Qui suis-je ?",
-		"Ma formation",
-		"Mes expériences",
-		"Me contacter",
-	];
+	const links = ["Qui suis-je ?", "Formation", "Expériences", "Contact"];
 
 	return links.map((text, index) => (
 		<Button

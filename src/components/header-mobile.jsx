@@ -4,25 +4,21 @@ import stylesHeader from "./header-mobile.module.css";
 import menu from "../assets/menu-burger.svg";
 
 const Links = ({ activeLink, setActiveLink, setShow }) => {
-	const links = [
-		"Qui suis-je ?",
-		"Ma formation",
-		"Mes expériences",
-		"Me contacter",
-	];
+	const links = ["Qui suis-je ?", "Formation", "Expériences", "Contact"];
 
 	return links.map((text, index) => (
-		<Button
-			key={index}
-			variant="link"
-			className={activeLink === index ? stylesHeader.active : null}
-			onClick={() => {
-				setActiveLink(index);
-				setShow(false);
-			}}
-		>
-			{text}
-		</Button>
+		<Dropdown.Item key={index}>
+			<Button
+				variant="link"
+				className={activeLink === index ? stylesHeader.active : null}
+				onClick={() => {
+					setActiveLink(index);
+					setShow(false);
+				}}
+			>
+				{text}
+			</Button>
+		</Dropdown.Item>
 	));
 };
 
@@ -36,7 +32,6 @@ export default ({ activeLink, setActiveLink }) => {
 				<Dropdown.Toggle className={stylesHeader.dropdown}>
 					<Image src={menu} />
 				</Dropdown.Toggle>
-
 				<Dropdown.Menu className={stylesHeader.dropdownMenu}>
 					<Links
 						activeLink={activeLink}
