@@ -4,6 +4,7 @@ import stylesSubpages from "./subpages.module.css";
 import stylesContact from "./contact.module.css";
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
+import gmail from "../assets/gmail.svg";
 
 export default () => {
 	return (
@@ -13,6 +14,17 @@ export default () => {
 				<p className={stylesSubpages.subtitle}>
 					Vous êtes à la recherche d'un développeur ?
 				</p>
+			</div>
+
+			<div
+				className={[stylesSubpages.marginBot, stylesContact.instructions].join(
+					" "
+				)}
+			>
+				<p>
+					Je suis disponible pour travailler en région parisienne ou en remote.
+				</p>
+				<p>Vous pouvez me contacter par l'un des moyens ci-dessous.</p>
 			</div>
 
 			<div
@@ -37,6 +49,9 @@ export default () => {
 					rel="noreferrer"
 				>
 					<img src={github} className={stylesContact.icons} alt="Logo Github" />
+				</a>
+				<a href="mailto:jeremiegthr@gmail.com">
+					<img src={gmail} className={stylesContact.icons} alt="Logo Gmail" />
 				</a>
 			</div>
 		</Container>
