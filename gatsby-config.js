@@ -6,6 +6,40 @@ require("dotenv").config({
 module.exports = {
 	plugins: [
 		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: "Jeremie GAUTHIER - Portfolio",
+				short_name: "jergauth",
+				start_url: "/",
+				background_color: "#090770",
+				theme_color: "#ffffff",
+				// Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+				// see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+				display: "standalone",
+				icon: "src/assets/favicon.png",
+				icons: [
+					{
+						src: `/favicons/android-chrome-192x192.png`,
+						sizes: `192x192`,
+						type: `image/png`,
+					},
+					{
+						src: `/favicons/android-chrome-512x512.png`,
+						sizes: `512x512`,
+						type: `image/png`,
+					},
+				],
+			},
+		},
+		{
+			resolve: `gatsby-plugin-offline`,
+			options: {
+				workboxConfig: {
+					globPatterns: ["**/*"],
+				},
+			},
+		},
+		{
 			resolve: "gatsby-plugin-html-attributes",
 			options: {
 				lang: "fr",
