@@ -4,25 +4,20 @@
 	display: flex;
 	font-style: italic;
 	font-weight: bold;
-	align-items: flex-end;
+	align-items: center;
 }
 
 .quote-symbol {
-	font-size: 4rem;
+	font-size: 5rem;
 }
 
 .quote-text {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	margin-left: 1rem;
 }
 
-.first-line {
+.quote-text p {
 	margin: 0;
-	padding-left: 0.5rem;
-}
-
-.second-line {
-	margin: 0;
-	padding-left: 2rem;
 }
 
 /* SERVICES */

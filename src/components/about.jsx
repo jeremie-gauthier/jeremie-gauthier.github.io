@@ -18,6 +18,14 @@ export default () => {
 				</p>
 			</div>
 
+			<div className={[stylesAbout.quote, stylesSubpages.marginBot].join(" ")}>
+				<span className={stylesAbout.quoteSymbol}>&#8223;</span>
+				<div className={stylesAbout.quoteText}>
+					<p>J'aime me confronter à des défis techniques,</p>
+					<p>cela me permet de repousser les limites de mon savoir.</p>
+				</div>
+			</div>
+
 			<h3
 				className={[stylesSubpages.marginBot, stylesAbout.titleServices].join(
 					" "
@@ -51,18 +59,6 @@ export default () => {
 					</div>
 				</Col>
 			</Row>
-
-			<div className={[stylesAbout.quote, stylesSubpages.marginBot].join(" ")}>
-				<span className={stylesAbout.quoteSymbol}>&#8223;</span>
-				<div className={stylesAbout.quoteText}>
-					<p className={stylesAbout.firstLine}>
-						J'aime me confronter à des défis techniques,
-					</p>
-					<p className={stylesAbout.secondLine}>
-						cela me permet de repousser les limites de mon savoir.
-					</p>
-				</div>
-			</div>
 		</Container>
 	);
 };
