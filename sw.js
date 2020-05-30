@@ -156,7 +156,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "eb910567f022c969a30004e82e3bc0b0"
+    "revision": "d926d9020f26bd919de43213bfde746e"
   },
   {
     "url": "manifest.webmanifest",
@@ -164,7 +164,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "15177d51c12b16ab2bc82d0cf19515c3"
+    "revision": "c3dd52e47512519db9532140f5c143bd"
   },
   {
     "url": "page-data/app-data.json",
