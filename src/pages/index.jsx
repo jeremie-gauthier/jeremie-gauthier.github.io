@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,7 +7,6 @@ import HeaderDesktop from "../components/header-desktop";
 import HeaderMobile from "../components/header-mobile";
 import Footer from "../components/footer";
 import About from "../components/about";
-import axios from "axios";
 
 export default () => {
 	const [activeLink, setActiveLink] = useState(0);
@@ -15,7 +14,7 @@ export default () => {
 	return (
 		<Container fluid>
 			<Helmet>
-				<link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+				{/* <link rel="icon" type="image/x-icon" href="/assets/favicon.png" /> */}
 				<meta
 					name="description"
 					content="Jeremie GAUTHIER's portfolio. FullStack Developer Freelance. Currently studying at 42 Paris."
