@@ -55,7 +55,7 @@ export default () => {
 	return (
 		<Container fluid>
 			<Helmet>
-				<link rel="icon" href="/assets/favicon.svg" />
+				<link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
 				<meta
 					name="description"
 					content="Jeremie GAUTHIER's portfolio. FullStack Developer Freelance. Currently studying at 42 Paris."
