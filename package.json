@@ -11,7 +11,8 @@
 		"start": "npm run develop",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",
-		"deploy": "yarn build && node ./scripts/deploy-github"
+		"deploy": "yarn build && node ./scripts/deploy-github",
+		"re": "yarn clean && rm -rf node_modules && yarn"
 	},
 	"dependencies": {
 		"bootstrap": "^4.5.0",
@@ -20,7 +21,6 @@
 		"gatsby-plugin-html-attributes": "^1.0.5",
 		"gatsby-plugin-manifest": "^2.4.9",
 		"gatsby-plugin-offline": "^3.2.7",
-		"gatsby-plugin-preload-link-crossorigin": "^1.0.2",
 		"gatsby-plugin-react-helmet": "^3.3.2",
 		"gatsby-plugin-sharp": "^2.6.9",
 		"gatsby-source-filesystem": "^2.3.8",

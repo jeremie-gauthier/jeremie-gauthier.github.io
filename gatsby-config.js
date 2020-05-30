@@ -1,4 +1,9 @@
 module.exports = {
+	siteMetadata: {
+		title: `Jeremie GAUTHIER - FullStack Developer`,
+		description: `Jeremie GAUTHIER's portfolio. FullStack Developer Freelance. Currently studying at 42 Paris.`,
+		author: `jergauth`,
+	},
 	plugins: [
 		{
 			resolve: `gatsby-plugin-manifest`,
@@ -50,6 +55,5 @@ module.exports = {
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
 		`gatsby-plugin-react-helmet`,
-		`gatsby-plugin-preload-link-crossorigin`,
 	],
 };

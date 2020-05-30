@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
@@ -7,21 +6,14 @@ import HeaderDesktop from "../components/header-desktop";
 import HeaderMobile from "../components/header-mobile";
 import Footer from "../components/footer";
 import About from "../components/about";
+import SEO from "../components/seo";
 
 export default () => {
 	const [activeLink, setActiveLink] = useState(0);
 
 	return (
 		<Container fluid>
-			<Helmet>
-				{/* <link rel="icon" type="image/x-icon" href="/assets/favicon.png" /> */}
-				<meta
-					name="description"
-					content="Jeremie GAUTHIER's portfolio. FullStack Developer Freelance. Currently studying at 42 Paris."
-				/>
-				<title>J&eacute;r&eacute;mie GAUTHIER - FullStack Developer</title>
-			</Helmet>
-
+			<SEO title={"Jeremie GAUTHIER - FullStack Developer"} />
 			{/* Show on xs only */}
 			<Row className="d-block d-sm-none bg-header">
 				<HeaderMobile activeLink={activeLink} setActiveLink={setActiveLink} />

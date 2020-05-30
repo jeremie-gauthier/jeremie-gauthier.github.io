@@ -944,7 +944,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.3", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2", "@babel/runtime@^7.9.6":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2", "@babel/runtime@^7.9.6":
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.1.tgz#b6eb75cac279588d3100baecd1b9894ea2840822"
   integrity sha512-nQbbCbQc9u/rpg1XCxoMYQTbSMVZjCDxErQ1ClCn9Pvcmv1lGads19ep0a2VsEiIJeHqjZley6EQGEC3Yo1xMA==
@@ -6298,13 +6298,6 @@ gatsby-plugin-page-creator@^2.3.7:
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
-
-gatsby-plugin-preload-link-crossorigin@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preload-link-crossorigin/-/gatsby-plugin-preload-link-crossorigin-1.0.2.tgz#75c291a822c7e88f5f3a11c51b954f1c58416a5a"
-  integrity sha512-3wnud525A6vfHvdZLVlhL8ZQq7wQ2SWJdaPBllwh2l5xUXw+IZF0Bc66BnGGVvfEX1dIyea/2hg0drzFjT4seQ==
-  dependencies:
-    "@babel/runtime" "^7.4.3"
 
 gatsby-plugin-react-helmet@^3.3.2:
   version "3.3.2"
