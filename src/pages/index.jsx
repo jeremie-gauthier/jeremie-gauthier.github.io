@@ -6,6 +6,7 @@ import HeaderDesktop from "../components/header-desktop";
 import HeaderMobile from "../components/header-mobile";
 import Footer from "../components/footer";
 import About from "../components/about";
+import Contact from "../components/contact";
 import SEO from "../components/seo";
 
 export default () => {
@@ -32,7 +33,7 @@ export default () => {
 					{activeLink === 0 && <About />}
 					{activeLink === 1 && <h1>Ma formation</h1>}
 					{activeLink === 2 && <h1>Mes exp&eacute;riences</h1>}
-					{activeLink === 3 && <h1>Me contacter</h1>}
+					{activeLink === 3 && <Contact />}
 					<Footer />
 				</Col>
 			</Row>
