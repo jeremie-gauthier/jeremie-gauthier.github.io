@@ -4,7 +4,7 @@ import { Card, Image } from "react-bootstrap";
 
 const Technos = ({ stack }) =>
 	stack.map((tech, index) => (
-		<Image key={index} src={tech} height={25} style={{ margin: ".5rem" }} />
+		<Image key={index} {...tech} style={{ height: "25px", margin: ".5rem" }} />
 	));
 
 export default ({ image, title, description, stack }) => {
@@ -21,7 +21,7 @@ export default ({ image, title, description, stack }) => {
 			<Card.Img
 				style={{ padding: "1rem", height: "125px" }}
 				variant="top"
-				src={image}
+				{...image}
 			/>
 			<Card.Body>
 				<Card.Title>{title}</Card.Title>

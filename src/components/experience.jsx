@@ -18,24 +18,28 @@ const Projects = ({ projects }) =>
 export default () => {
 	const projects = [
 		{
-			image: logo42,
+			image: { src: logo42, alt: "Logo 42", title: "42" },
 			title: "FullStack web et mobile",
 			description:
 				"Creation d'une plateforme (web et mobile) de mise en relation entre donneurs d'ordres et cordistes.",
-			stack: [react, node, mysql],
+			stack: [
+				{ src: react, alt: "Logo ReactJS", title: "ReactJS" },
+				{ src: node, alt: "Logo NodeJS", title: "NodeJS" },
+				{ src: mysql, alt: "Logo MySQL", title: "MySQL" },
+			],
 		},
 		{
-			image: renault,
+			image: { src: renault, alt: "Logo Renault", title: "Renault" },
 			title: "Conception logiciel",
 			description:
 				"Creation d'un logiciel graphique vectoriel capable de piloter des LEDs.",
-			stack: [python],
+			stack: [{ src: python, alt: "Logo Python", title: "Python" }],
 		},
 		{
-			image: orange,
+			image: { src: orange, alt: "Logo Orange", title: "Orange" },
 			title: "Developpeur back-end",
 			description: "Participation a la refonte de l'intranet.",
-			stack: [php],
+			stack: [{ src: php, alt: "Logo PHP", title: "PHP" }],
 		},
 	];
 
