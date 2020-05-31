@@ -30,7 +30,7 @@ export default () => {
 		},
 		{
 			image: { src: renault, alt: "Logo Renault", title: "Renault" },
-			title: "Conception logiciel",
+			title: "Developpeur Python",
 			description:
 				"Creation d'un logiciel graphique vectoriel capable de piloter des LEDs.",
 			stack: [{ src: python, alt: "Logo Python", title: "Python" }],
