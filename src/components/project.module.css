@@ -1,0 +1,11 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.illustrations {
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
