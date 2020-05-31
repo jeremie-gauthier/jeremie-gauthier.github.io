@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
 
-export default function NotFound() {
+export default () => {
 	return (
 		<Layout>
 			<h1>Page introuvable</h1>
@@ -12,4 +12,4 @@ export default function NotFound() {
 			</Link>
 		</Layout>
 	);
-}
+};
