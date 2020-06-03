@@ -10,7 +10,7 @@ import mysql from "../assets/mysql.svg";
 export default () => {
 	return (
 		<Container className={stylesSubpages.container}>
-			<div className={stylesSubpages.marginBot}>
+			<div>
 				<h2 className={stylesSubpages.title}>Qui suis-je ?</h2>
 				<p className={stylesSubpages.subtitle}>
 					Actuellement étudiant à 42 Paris, je suis également développeur
