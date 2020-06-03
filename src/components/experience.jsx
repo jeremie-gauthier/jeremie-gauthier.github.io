@@ -20,7 +20,7 @@ export default () => {
 			image: { src: logo42, alt: "Logo 42", title: "42" },
 			title: "FullStack web et mobile",
 			description:
-				"Creation d'une plateforme (web et mobile) de mise en relation entre donneurs d'ordres et cordistes.",
+				"Création d'une plateforme (web et mobile) de mise en relation entre donneurs d'ordres et cordistes.",
 			stack: [
 				{ src: react, alt: "Logo ReactJS", title: "ReactJS" },
 				{ src: node, alt: "Logo NodeJS", title: "NodeJS" },
@@ -29,15 +29,15 @@ export default () => {
 		},
 		{
 			image: { src: renault, alt: "Logo Renault", title: "Renault" },
-			title: "Developpeur Python",
+			title: "Développeur Python",
 			description:
-				"Creation d'un logiciel graphique vectoriel capable de piloter des LEDs.",
+				"Création d'un logiciel graphique vectoriel capable de piloter des LEDs.",
 			stack: [{ src: python, alt: "Logo Python", title: "Python" }],
 		},
 		{
 			image: { src: orange, alt: "Logo Orange", title: "Orange" },
-			title: "Developpeur back-end",
-			description: "Participation a la refonte de l'intranet.",
+			title: "Développeur back-end",
+			description: "Participation à la refonte de l'intranet.",
 			stack: [{ src: php, alt: "Logo PHP", title: "PHP" }],
 		},
 	];
