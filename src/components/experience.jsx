@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, CardDeck } from "react-bootstrap";
 import stylesSubpages from "./subpages.module.css";
-import stylesExperience from "./experience.module.css";
 import Project from "./project";
 import logo42 from "../assets/42.svg";
 import renault from "../assets/renault.svg";

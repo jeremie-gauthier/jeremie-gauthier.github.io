@@ -4,7 +4,7 @@ import stylesHeader from "./header-mobile.module.css";
 import menu from "../assets/menu-burger.svg";
 
 const Links = ({ activeLink, setActiveLink, setShow }) => {
-	const links = ["Qui suis-je ?", "Formation", "Expériences", "Contact"];
+	const links = ["Qui suis-je ?", "Expériences", "Contact"];
 
 	return links.map((text, index) => (
 		<Dropdown.Item key={index}>
