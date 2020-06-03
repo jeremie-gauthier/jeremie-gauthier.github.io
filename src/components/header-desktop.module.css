@@ -1,3 +1,5 @@
+@import "../styles/global.css";
+
 .profile {
 	text-align: center;
 	margin-bottom: 1.5rem;
@@ -5,7 +7,7 @@
 
 .title {
 	font-weight: bold;
-	color: #f9d310;
+	color: var(--tertiary);
 }
 
 .portrait {
@@ -27,18 +29,18 @@
 .links * {
 	font-size: 1.5rem;
 	padding: 0.5rem 0rem;
-	color: #fff;
+	color: var(--text);
 	max-width: fit-content;
 }
 
 .links *:hover,
 .links *:focus {
-	color: #fff;
-	text-decoration: underline #f9d310;
+	color: var(--text);
+	text-decoration: underline var(--tertiary);
 }
 
 .active,
 .active:focus,
 .active:enabled {
-	text-decoration: underline #f9d310;
+	text-decoration: underline var(--tertiary);
 }
