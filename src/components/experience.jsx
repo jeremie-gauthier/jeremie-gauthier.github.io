@@ -51,6 +51,7 @@ export default () => {
 						display: "flex",
 						flexDirection: "row",
 						flexWrap: "wrap",
+						justifyContent: "center",
 					}}
 				>
 					<Projects projects={projects} />
