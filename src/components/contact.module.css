@@ -1,5 +1,7 @@
-.instructions {
-	text-align: center;
+@media (min-width: 576px) {
+	.instructions {
+		text-align: center;
+	}
 }
 
 .group-icons {
