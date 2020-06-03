@@ -36,6 +36,20 @@ export default () => {
 			<Row
 				className={[stylesAbout.services, stylesSubpages.marginBot].join(" ")}
 			>
+				<Col sm={{ span: 6, offset: 3 }}>
+					<h4>MOBILE</h4>
+					<p>
+						Je peux réaliser votre app mobile compatible Android et iOS, grâce à
+						React Native.
+					</p>
+					<div className={stylesAbout.icons}>
+						<img src={react} title="React Native" alt="Logo React Native" />
+					</div>
+				</Col>
+			</Row>
+			<Row
+				className={[stylesAbout.services, stylesSubpages.marginBot].join(" ")}
+			>
 				<Col>
 					<h4>FRONT-END</h4>
 					<p>
