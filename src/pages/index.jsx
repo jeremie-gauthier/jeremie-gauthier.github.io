@@ -30,7 +30,7 @@ export default () => {
 					/>
 				</Col>
 
-				<Col className="main">
+				<Col className="main pad-top">
 					{activeLink === 0 && <About />}
 					{activeLink === 1 && <Experiences />}
 					{activeLink === 2 && <Contact />}
