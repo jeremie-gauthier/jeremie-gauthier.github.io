@@ -1,8 +1,9 @@
 :root {
-	--primary: #0d1e5b;
-	--secondary: #090770;
-	--tertiary: #f9d310;
+	--primary: #000839;
+	--secondary: #005082;
+	--tertiary: #ffa41b;
 	--text: #fff;
+	--title: var(--tertiary);
 }
 
 html,
