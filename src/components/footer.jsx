@@ -1,5 +1,5 @@
-import React from "react";
+import React, { memo } from "react";
 
-export default () => {
-	return <footer>© {new Date().getFullYear()} - Jérémie GAUTHIER</footer>;
-};
+export default memo(() => (
+	<footer>© {new Date().getFullYear()} - Jérémie GAUTHIER</footer>
+));
