@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useMediaQuery } from "react-responsive";
 import "../styles/global.css";
 import HeaderDesktop from "../components/header-desktop";
 import HeaderMobile from "../components/header-mobile";
@@ -10,25 +11,38 @@ import Experiences from "../components/experience";
 import Contact from "../components/contact";
 import SEO from "../components/seo";
 
+const Mobile = ({ children }) => {
+	const isMobile = useMediaQuery({ maxWidth: 575 });
+	return isMobile ? children : null;
+};
+
+const NotMobile = ({ children }) => {
+	const isNotMobile = useMediaQuery({ minWidth: 576 });
+	return isNotMobile ? children : null;
+};
+
 export default () => {
 	const [activeLink, setActiveLink] = useState(0);
 
 	return (
 		<Container fluid>
 			<SEO title={"Jeremie GAUTHIER - FullStack Developer"} />
-			{/* Show on xs only */}
-			<Row className="d-block d-sm-none bg-header">
-				<HeaderMobile activeLink={activeLink} setActiveLink={setActiveLink} />
-			</Row>
+
+			<Mobile>
+				<Row className="bg-header">
+					<HeaderMobile activeLink={activeLink} setActiveLink={setActiveLink} />
+				</Row>
+			</Mobile>
 
 			<Row className="full-height">
-				{/* Show on sm+ only */}
-				<Col className="d-none d-sm-block bg-header pad-top" md={3} sm={5}>
-					<HeaderDesktop
-						activeLink={activeLink}
-						setActiveLink={setActiveLink}
-					/>
-				</Col>
+				<NotMobile>
+					<Col className="bg-header pad-top" md={3} sm={5}>
+						<HeaderDesktop
+							activeLink={activeLink}
+							setActiveLink={setActiveLink}
+						/>
+					</Col>
+				</NotMobile>
 
 				<Col className="main pad-top">
 					{activeLink === 0 && <About />}
