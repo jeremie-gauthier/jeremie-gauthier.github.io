@@ -103,7 +103,12 @@ const Bubbles = memo(() => (
 const Header = ({ activeLink, setActiveLink }) => {
 	return (
 		<header>
-			<div className={stylesHeader.profile}>
+			<Bubbles />
+			<div
+				className={[stylesHeader.profile, stylesHeader.contentOverBubbles].join(
+					" "
+				)}
+			>
 				<h1 className={stylesHeader.title}>J&eacute;r&eacute;mie GAUTHIER</h1>
 				<div className={stylesHeader.portrait}>
 					<Portrait />
@@ -112,7 +117,11 @@ const Header = ({ activeLink, setActiveLink }) => {
 					FullStack Javascript - Freelance
 				</div>
 			</div>
-			<div className={stylesHeader.links}>
+			<div
+				className={[stylesHeader.links, stylesHeader.contentOverBubbles].join(
+					" "
+				)}
+			>
 				<Links activeLink={activeLink} setActiveLink={setActiveLink} />
 			</div>
 		</header>
