@@ -31,7 +31,7 @@ export default ({ activeLink, setActiveLink }) => {
 			<Dropdown
 				show={show}
 				onToggle={(showState) => setShow(showState)}
-				className={stylesHeader.dropdown}
+				className={stylesHeader.dropdownDiv}
 			>
 				<Dropdown.Toggle className={stylesHeader.dropdownBtn}>
 					<Image src={menu} alt="Menu déroulant" />
