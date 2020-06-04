@@ -1,3 +1,8 @@
+const customQueries = {
+	mobile: "(max-width: 575px)",
+	default: "(min-width: 576px)",
+};
+
 module.exports = {
 	siteMetadata: {
 		title: `Jeremie GAUTHIER - FullStack Developer`,
@@ -50,6 +55,12 @@ module.exports = {
 			options: {
 				name: `assets`,
 				path: `${__dirname}/src/assets/`,
+			},
+		},
+		{
+			resolve: `gatsby-plugin-breakpoints`,
+			options: {
+				queries: customQueries,
 			},
 		},
 		`gatsby-transformer-sharp`,
