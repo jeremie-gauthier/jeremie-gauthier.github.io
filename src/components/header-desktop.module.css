@@ -44,3 +44,19 @@
 .active:enabled {
 	text-decoration: underline var(--tertiary);
 }
+
+/* Background animation */
+
+.bubbles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.content-over-bubbles {
+	position: relative;
+	z-index: 3000;
+}
