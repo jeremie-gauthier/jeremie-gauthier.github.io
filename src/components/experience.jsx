@@ -45,7 +45,7 @@ export default () => {
 	return (
 		<Container className={stylesSubpages.container}>
 			<div className={stylesSubpages.marginBot}>
-				<h2 className={stylesSubpages.title}>Exp&eacute;riences</h2>
+				<h2 className={stylesSubpages.title}>Expériences</h2>
 				<CardDeck
 					style={{
 						display: "flex",

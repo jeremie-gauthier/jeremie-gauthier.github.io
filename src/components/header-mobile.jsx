@@ -27,14 +27,14 @@ export default ({ activeLink, setActiveLink }) => {
 
 	return (
 		<header className={stylesHeader.container}>
-			<h1 className={stylesHeader.title}>J&eacute;r&eacute;mie GAUTHIER</h1>
+			<h1 className={stylesHeader.title}>Jérémie GAUTHIER</h1>
 			<Dropdown
 				show={show}
 				onToggle={(showState) => setShow(showState)}
 				className={stylesHeader.dropdown}
 			>
 				<Dropdown.Toggle className={stylesHeader.dropdownBtn}>
-					<Image src={menu} alt="Menu d&eacute;roulant" />
+					<Image src={menu} alt="Menu déroulant" />
 				</Dropdown.Toggle>
 				<Dropdown.Menu className={stylesHeader.dropdownMenu}>
 					<Links

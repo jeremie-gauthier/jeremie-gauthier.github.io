@@ -109,7 +109,7 @@ const Header = ({ activeLink, setActiveLink }) => {
 					" "
 				)}
 			>
-				<h1 className={stylesHeader.title}>J&eacute;r&eacute;mie GAUTHIER</h1>
+				<h1 className={stylesHeader.title}>Jérémie GAUTHIER</h1>
 				<div className={stylesHeader.portrait}>
 					<Portrait />
 				</div>
