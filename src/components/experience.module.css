@@ -1,0 +1,9 @@
+@import "../styles/global.css";
+
+.link {
+	color: var(--tertiary);
+}
+
+.link:hover {
+	color: var(--text);
+}

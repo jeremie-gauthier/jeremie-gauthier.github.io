@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, CardDeck } from "react-bootstrap";
 import stylesSubpages from "./subpages.module.css";
+import stylesExp from "./experience.module.css";
 import Project from "./project";
 import logo42 from "../assets/42.svg";
 import renault from "../assets/renault.svg";
@@ -10,12 +11,36 @@ import react from "../assets/react.svg";
 import mysql from "../assets/mysql.svg";
 import orange from "../assets/orange.svg";
 import php from "../assets/php.svg";
+import npm from "../assets/npm.svg";
+import typescript from "../assets/typescript.svg";
 
 const Projects = ({ projects }) =>
 	projects.map((project, index) => <Project key={index} {...project} />);
 
 export default () => {
 	const projects = [
+		{
+			image: { src: npm, alt: "Logo NPM", title: "npm" },
+			title: "react-suggestbar",
+			description: (
+				<>
+					Création d'un package npm en OpenSource.
+					<br />
+					<a
+						href="https://www.npmjs.com/package/react-suggestbar"
+						target="_blank"
+						rel="noreferrer"
+						className={stylesExp.link}
+					>
+						Voir plus
+					</a>
+				</>
+			),
+			stack: [
+				{ src: react, alt: "Logo ReactJS", title: "ReactJS" },
+				{ src: typescript, alt: "Logo TypeScript", title: "TypeScript" },
+			],
+		},
 		{
 			image: { src: logo42, alt: "Logo 42", title: "42" },
 			title: "FullStack web et mobile",
