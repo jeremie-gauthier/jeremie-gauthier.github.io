@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Image } from "react-bootstrap";
-// import stylesProject from "./project.module.css";
 
 const Technos = ({ stack }) =>
 	stack.map((tech, index) => (
